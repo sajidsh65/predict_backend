@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "predictions76.up.railway.app",
-    "https://predictions-bysajid.vercel.app",
+    "predictions-bysajid.vercel.app",
     "localhost",  # Optional, for local development
     "127.0.0.1",
 ]
@@ -75,6 +76,22 @@ CORS_ALLOWED_ORIGINS = [
     "https://predictions-bysajid.vercel.app",  # Vercel frontend URL
     "https://predictions76.up.railway.app",  # Railway backend URL
 ]
+
+
+
+CORS_ALLOWED_ORIGINS = []  # Optional: can leave empty if using regex
+
+CORS_ALLOW_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+    r"^https://predictions76\.up\.railway\.app$",
+]
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "access-control-allow-origin",
+    'content-type',
+    'authorization',
+]
+
 
 ROOT_URLCONF = 'ai_chatbot.urls'
 
