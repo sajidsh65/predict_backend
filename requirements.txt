@@ -12,6 +12,9 @@ gunicorn
 # ✅ PostgreSQL support
 psycopg2-binary
 
+numpy
+tensorflow==2.18.0
+
 # ✅ Environment variable loader
 python-dotenv
 
