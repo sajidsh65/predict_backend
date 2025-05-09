@@ -63,7 +63,6 @@ CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
 CORS_ALLOW_HEADERS = [
     'content-type',
     'authorization',
-    'conversation-id',  # Add this line to allow this custom header
 
 ]
 
