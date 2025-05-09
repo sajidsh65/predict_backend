@@ -1,0 +1,31 @@
+
+dj-database-url
+python-dotenv
+langchain
+openai
+# ✅ Core Django
+Django>=5.0
+
+# ✅ WSGI Server for production
+gunicorn
+
+# ✅ PostgreSQL support
+psycopg2-binary
+
+# ✅ Environment variable loader
+python-dotenv
+
+# ✅ Django REST Framework
+djangorestframework
+djangorestframework-simplejwt
+# djangorestframework-authtoken
+
+# ✅ Cross-origin requests (for React frontend)
+django-cors-headers
+
+# ✅ LangChain AI Library
+langchain
+openai  # Required for langchain to work with LLM APIs
+
+# ✅ Requests library (used for Gemini API calls)
+requests
