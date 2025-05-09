@@ -2,6 +2,7 @@
 import os
 import numpy as np
 import pickle
+from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from tensorflow.keras.models import load_model # type: ignore
