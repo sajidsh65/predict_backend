@@ -29,7 +29,7 @@ DJANGO_SECRET_KEY="u(t4wq%03(&e(&ahca38@i8vwzjnc7p3roq5$*+xalm#!i2cii"
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "chatbot-bysajid-3685.up.railway.app",
+    "predictions76.up.railway.app",
     "https://chatbot-bysajid.vercel.app",
     "localhost",  # Optional, for local development
     "127.0.0.1",
@@ -72,7 +72,7 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:3000",  # Local development
     "https://chatbot-bysajid.vercel.app",  # Vercel frontend URL
-    "https://chatbot-bysajid-3685.up.railway.app",  # Railway backend URL
+    "https://predictions76.up.railway.app",  # Railway backend URL
 ]
 
 ROOT_URLCONF = 'ai_chatbot.urls'
