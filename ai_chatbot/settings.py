@@ -63,7 +63,7 @@ MIDDLEWARE = [
     
 ]
 
-# CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
+CORS_ALLOW_ALL_ORIGINS = True  # Sabhi origins allow kar do
 
 CORS_ALLOW_HEADERS = [
     'content-type',
@@ -79,18 +79,18 @@ CORS_ALLOWED_ORIGINS = [
 
 
 
-CORS_ALLOWED_ORIGINS = []  # Optional: can leave empty if using regex
+# CORS_ALLOWED_ORIGINS = []  # Optional: can leave empty if using regex
 
-CORS_ALLOW_ORIGIN_REGEXES = [
-    r"^https://.*\.vercel\.app$",
-    r"^https://predictions76\.up\.railway\.app$",
-]
+# CORS_ALLOW_ORIGIN_REGEXES = [
+#     r"^https://.*\.vercel\.app$",
+#     r"^https://predictions76\.up\.railway\.app$",
+# ]
 
-CORS_ALLOW_HEADERS = list(default_headers) + [
-    "access-control-allow-origin",
-    'content-type',
-    'authorization',
-]
+# CORS_ALLOW_HEADERS = list(default_headers) + [
+#     "access-control-allow-origin",
+#     'content-type',
+#     'authorization',
+# ]
 
 
 ROOT_URLCONF = 'ai_chatbot.urls'
