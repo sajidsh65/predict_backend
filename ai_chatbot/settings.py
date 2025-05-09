@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "predictions76.up.railway.app",
-    "https://predictions-bysajid.vercel.app/",
+    "https://predictions-bysajid.vercel.app",
     "localhost",  # Optional, for local development
     "127.0.0.1",
 ]
@@ -71,7 +71,7 @@ CORS_ALLOW_HEADERS = [
 
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:3000",  # Local development
-    "https://predictions-bysajid.vercel.app/",  # Vercel frontend URL
+    "https://predictions-bysajid.vercel.app",  # Vercel frontend URL
     "https://predictions76.up.railway.app",  # Railway backend URL
 ]
 
